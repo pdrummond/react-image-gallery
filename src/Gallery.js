@@ -27,6 +27,10 @@ export class Gallery extends Component {
     )
   }
 
+  componentDidMount() {
+    this.props.loadImages();
+  }
+
   handleThumbClick(selectedImage) {
     this.setState({
       selectedImage
